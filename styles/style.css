@@ -1,0 +1,31 @@
+/* fonts */
+
+/* color variables */
+:root{
+    --light-turquoise: rgb(12, 176, 152);
+    --dark-turquoise: rgb(8, 124, 106);
+}
+
+
+/* general styling */
+header, footer{
+    height: 120px;
+    width: 100%;
+    background: var(--light-turquoise);
+}
+
+main{
+    min-height: calc(100vh - 240px);
+    width: 100%;
+    background: var(--dark-turquoise);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookList{
+    height: 500px;
+    width: 400px;
+    background: var(--light-turquoise);
+    border-radius: 25px;
+}
