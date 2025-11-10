@@ -23,9 +23,20 @@ main{
     align-items: center;
 }
 
-.bookList{
-    height: 500px;
+.bookListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookContainer{
+    height: 400px;
     width: 400px;
     background: var(--light-turquoise);
     border-radius: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
