@@ -1,0 +1,7 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v32-latin-regular.woff2') format('woff2'); 
+}
