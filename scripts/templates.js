@@ -1,4 +1,4 @@
-function getBookTemplate(indexBooklist){
+function getBookTemplate(indexBooklist) {
     return `
      <div id="bookListRef${indexBooklist}" class="bookContainer">
             <h2>${books[indexBooklist].name}</h2>
@@ -14,10 +14,18 @@ function getBookTemplate(indexBooklist){
                 <p>Genre: ${books[indexBooklist].genre}</p>
             </section>
             <section class="commentdepartment">
-                <h3>Kommentare:</h3>
-                ${books[indexBooklist].comments}
-                <input class="commentInput" type="text">
+            <h3>Kommentare:</h3>
+            <table id="commentRef${indexBooklist}">
+            </table>
+            <input class="commentInput" type="text">
                 <button onclick="" class="sharebutton"></button>
             </section>
         </div> `
+}
+
+function getCommentsTemplate(commentsName, commentsComment) {
+    return `
+    <th>${commentsName}</th>
+    <tr>${commentsComment}</tr>         
+  `
 }
