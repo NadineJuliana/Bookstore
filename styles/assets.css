@@ -1,9 +1,22 @@
 .likebutton{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 8px 0 0 8px;
 }
 
 .commentInput{
-    width: 300px;
+    width: 250px;
     height: 30px;
+    margin-right: 8px;
+}
+
+.sharebutton{
+    height: 32px;
+    width: 32px;
+}
+
+.bookImages{
+    height: 200px;
+    width: 350px;
+    object-fit: fill;
 }

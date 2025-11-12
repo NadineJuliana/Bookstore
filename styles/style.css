@@ -1,20 +1,21 @@
 /* fonts */
 
 /* color variables */
-:root{
+:root {
     --light-turquoise: rgb(12, 176, 152);
     --dark-turquoise: rgb(8, 124, 106);
 }
 
 
 /* general styling */
-header, footer{
+header,
+footer {
     height: 120px;
     width: 100%;
     background: var(--light-turquoise);
 }
 
-main{
+main {
     min-height: calc(100vh - 240px);
     width: 100%;
     background: var(--dark-turquoise);
@@ -23,20 +24,77 @@ main{
     align-items: center;
 }
 
-.bookListContainer{
+/* headlines */
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    margin: 8px;
+}
+
+/* Container */
+.bookListContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.bookContainer{
-    height: 400px;
-    width: 400px;
+.bookContainer {
+    height: 700px;
+    width: 350px;
     background: var(--light-turquoise);
     border-radius: 25px;
     margin: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+}
+
+.highlightSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.likeSection {
+    display: flex;
+    align-items: center;
+}
+
+.bookInformations {
+    margin: 8px;
+    text-align: center;
+}
+
+.commentDepartment {
+    margin: 8px;
+    overflow-y: scroll;
+    display: flex;
+    height: 200px;
+    text-align: left;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0px 8px;
+}
+
+th {
+    vertical-align: top;
+    padding-right: 8px;
+}
+
+td {
+    vertical-align: top;
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
 }
