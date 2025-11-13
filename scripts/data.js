@@ -1,12 +1,14 @@
 let books = [
   {
-    "name": "Die Geheimnisse des Ozeans",
-    "author": "Clara Meer",
+    "name": "Die sieben Schwestern",
+    "img": "assets/img/Die_sieben_Schwestern1.jpg",
+    "alt": "Die sieben Schwestern Coverbild",
+    "author": "Lucinda Riley",
     "likes": 1250,
     "liked": true,
-    "price": 19.99,
-    "publishedYear": 2018,
-    "genre": "Fantasy",
+    "price": 22.00,
+    "publishedYear": 2015,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "Leser123",
@@ -31,23 +33,27 @@ let books = [
     ]
   },
   {
-    "name": "Der vergessene Pfad",
-    "author": "Maximilian Schwarz",
+    "name": "Die Sturmschwester",
+    "img": "assets/img/Die_Sturmschwester2.jpg",
+    "alt": "Die Sturmschwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 980,
     "liked": false,
-    "price": 14.50,
-    "publishedYear": 2021,
-    "genre": "Fantasy",
+    "price": 22.00,
+    "publishedYear": 2015,
+    "genre": "Literatur & Belleristik",
     "comments": []
   },
   {
-    "name": "Die Farben des Himmels",
-    "author": "Laura Blau",
+    "name": "Die Schattenschwester",
+    "img": "assets/img/Die_Schattenschwester3.jpg",
+    "alt": "Die Schattenschwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 1520,
     "liked": true,
-    "price": 22.95,
-    "publishedYear": 2019,
-    "genre": "Romantik",
+    "price": 22.00,
+    "publishedYear": 2016,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "LeserPeter",
@@ -72,13 +78,15 @@ let books = [
     ]
   },
   {
-    "name": "Das Rätsel der Zeit",
-    "author": "Alexander Weiss",
+    "name": "Die Perlenschwester",
+    "img": "assets/img/Die_Perlenschwester4.jpg",
+    "alt": "Die Perlenschwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 750,
     "liked": false,
-    "price": 18.00,
-    "publishedYear": 2020,
-    "genre": "Science-Fiction",
+    "price": 19.99,
+    "publishedYear": 2017,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "BuchKenner",
@@ -91,23 +99,27 @@ let books = [
     ]
   },
   {
-    "name": "Der letzte Wächter",
-    "author": "Sabine Grün",
+    "name": "Die Mondschwester",
+    "img": "assets/img/Die_Mondschwester5.jpg",
+    "alt": "Die Mondschwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 1300,
     "liked": true,
-    "price": 16.75,
-    "publishedYear": 2017,
-    "genre": "Fantasy",
+    "price": 19.99,
+    "publishedYear": 2018,
+    "genre": "Literatur & Belleristik",
     "comments": []
   },
   {
-    "name": "Im Schatten des Mondes",
-    "author": "Philipp Silber",
+    "name": "Die Sonnenschwester",
+    "img": "assets/img/Die_Sonnnenschwester6.jpg",
+    "alt": "Die Sonnenschwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 890,
     "liked": false,
-    "price": 12.30,
-    "publishedYear": 2022,
-    "genre": "Science-Fiction",
+    "price": 22.00,
+    "publishedYear": 2019,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "BücherLiebhaber",
@@ -120,13 +132,15 @@ let books = [
     ]
   },
   {
-    "name": "Jenseits der Sterne",
-    "author": "Oliver Schwarz",
+    "name": "Die verschwundene Schwester",
+    "img": "assets/img/Die_verschwundene_Schwester7.jpg",
+    "alt": "Die verschwundene Schwester Coverbild",
+    "author": "Lucinda Riley",
     "likes": 1450,
     "liked": true,
-    "price": 21.00,
-    "publishedYear": 2015,
-    "genre": "Science-Fiction",
+    "price": 22.00,
+    "publishedYear": 2021,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "Leser123",
@@ -135,40 +149,19 @@ let books = [
     ]
   },
   {
-    "name": "Das verborgene Königreich",
-    "author": "Elena Gold",
+    "name": "Atlas - Die Geschichte von Pa Salt",
+    "img": "assets/img/ATLAS_Die_Geschichte_von_Pa_Salt8.jpg",
+    "alt": "Atlas - Die Geschichte von Pa Salt Coverbild",
+    "author": "Lucinda Riley",
     "likes": 920,
     "liked": false,
-    "price": 17.50,
-    "publishedYear": 2020,
-    "genre": "Fantasy",
+    "price": 24.00,
+    "publishedYear": 2023,
+    "genre": "Literatur & Belleristik",
     "comments": [
       {
         "name": "Bookworm92",
         "comment": "Ein faszinierendes Buch, das mich von der ersten Seite an gefesselt hat."
-      }
-    ]
-  },
-  {
-    "name": "Liebe in Zeiten des Krieges",
-    "author": "Emilia Rot",
-    "likes": 1800,
-    "liked": true,
-    "price": 19.99,
-    "publishedYear": 2016,
-    "genre": "Romantik",
-    "comments": [
-      {
-        "name": "Bibliophile23",
-        "comment": "Die Fantasiewelt war so lebendig, ich konnte das Buch kaum aus der Hand legen."
-      },
-      {
-        "name": "StorySeeker",
-        "comment": "Eine unglaublich berührende Liebesgeschichte, die mich tief bewegt hat."
-      },
-      {
-        "name": "SciFiExplorer",
-        "comment": "Spannende Zukunftsvisionen und interessante Charaktere machten diesen Roman einzigartig."
       }
     ]
   }
