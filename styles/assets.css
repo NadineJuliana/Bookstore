@@ -1,3 +1,15 @@
+.headerLogo{
+    width: 280px;
+    height: 120px;
+}
+
+.bookImages{
+    height: 200px;
+    width: 350px;
+    object-fit: fill;
+    box-shadow: 2px 2px 5px var(--orange-shadow);
+}
+
 .likebutton{
     height: 40px;
     width: 40px;
@@ -5,9 +17,13 @@
 }
 
 .commentInput{
-    width: 250px;
+    width: 280px;
     height: 30px;
     margin-right: 8px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px var(--orange-shadow);
+    border-radius: 10px;
 }
 
 .sharebutton{
@@ -15,8 +31,10 @@
     width: 32px;
 }
 
-.bookImages{
-    height: 200px;
-    width: 350px;
-    object-fit: fill;
+.likebutton:hover{
+    cursor: pointer;
+}
+
+.sharebutton:hover{
+    cursor: pointer;
 }
