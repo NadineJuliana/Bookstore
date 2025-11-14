@@ -50,5 +50,6 @@ function addComment(indexBooklist) {
   }
   document.getElementById(`commentRef${indexBooklist}`).innerHTML += getAddCommentsTemplate(newName, newComment);
   books[indexBooklist].comments.push(newName, newComment);
+  newNameRef.value = "";
   newCommentRef.value = "";
 }
