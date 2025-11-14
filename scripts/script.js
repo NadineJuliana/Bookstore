@@ -13,8 +13,6 @@ function renderBookList() {
   }
 }
 
-
-
 function highlightedBook(indexBooklist) {
   let highlightImage = document.getElementById(`bookHighlight${indexBooklist}`);
   let indexHighlight = document.getElementById(`counterLikes${indexBooklist}`);
@@ -42,9 +40,15 @@ function changeHighlight(indexBooklist) {
 }
 
 function addComment(indexBooklist) {
+  let newNameRef = document.getElementById(`newName${indexBooklist}`);
   let newCommentRef = document.getElementById(`newComment${indexBooklist}`);
-  newComment = newCommentRef.value;
-  document.getElementById(`commentRef${indexBooklist}`).innerHTML += getAddCommentsTemplate(newComment);
-  books[indexBooklist].comments.push(newComment);
+  newName = newNameRef.value.trim();
+  newComment = newCommentRef.value.trim();
+  if (newName === "" || newComment === "") {
+    alert("Bitte ausfüllen!");
+    return;
+  }
+  document.getElementById(`commentRef${indexBooklist}`).innerHTML += getAddCommentsTemplate(newName, newComment);
+  books[indexBooklist].comments.push(newName, newComment);
   newCommentRef.value = "";
 }
