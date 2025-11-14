@@ -1,5 +1,5 @@
 function renderBookList() {
-  let contentBooklistRef = document.getElementById('bookListContainer');
+  const contentBooklistRef = document.getElementById('bookListContainer');
   contentBooklistRef.innerHTML = "";
   for (let indexBooklist = 0; indexBooklist < books.length; indexBooklist++) {
     contentBooklistRef.innerHTML += getBookTemplate(indexBooklist);
@@ -14,8 +14,8 @@ function renderBookList() {
 }
 
 function highlightedBook(indexBooklist) {
-  let highlightImage = document.getElementById(`bookHighlight${indexBooklist}`);
-  let indexHighlight = document.getElementById(`counterLikes${indexBooklist}`);
+  const highlightImage = document.getElementById(`bookHighlight${indexBooklist}`);
+  const indexHighlight = document.getElementById(`counterLikes${indexBooklist}`);
   if (books[indexBooklist].liked) {
     highlightImage.src = "assets/icons/002-lieblings-1.png";
     indexHighlight.innerHTML = "";
@@ -27,7 +27,7 @@ function highlightedBook(indexBooklist) {
 }
 
 function changeHighlight(indexBooklist) {
-  let highlightImage = document.getElementById(`bookHighlight${indexBooklist}`);
+  const highlightImage = document.getElementById(`bookHighlight${indexBooklist}`);
   if (books[indexBooklist].liked) {
     books[indexBooklist].likes--;
     books[indexBooklist].liked = false;
