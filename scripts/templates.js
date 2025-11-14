@@ -1,5 +1,5 @@
 function getBookTemplate(indexBooklist) {
-    return `
+  return `
      <div id="bookListRef${indexBooklist}" class="bookContainer">
             <h2>${books[indexBooklist].name}</h2>
             <img class="bookImages" src="${books[indexBooklist].img}" alt="${books[indexBooklist].alt}">
@@ -21,22 +21,25 @@ function getBookTemplate(indexBooklist) {
             </table>
             </section>
             <section class="inputSection">
+            <div class="inputfields">
+            <input id="newName${indexBooklist}" class="nameInput" type="text" min-length="2" placeholder="-Name-" required>
             <input id="newComment${indexBooklist}" class="commentInput" type="text" min-length="2" placeholder="-Hier kommentieren-" required>
+            </div>
                 <img onclick="addComment(${indexBooklist})" class="sharebutton" src="assets/icons/006-like-button.png" alt="Send Comment">
             </section>
         </div> `
 }
 
 function getCommentsTemplate(commentsName, commentsComment) {
-    return `
+  return `
     <th>[${commentsName}]</th>
     <td>${commentsComment}</td>         
   `
 }
 
-function getAddCommentsTemplate(newComment) {
+function getAddCommentsTemplate(newName, newComment) {
   return `
-    <th>[XYZ]</th>
+    <th>[${newName}]</th>
     <td>${newComment}</td>
   `
 }
