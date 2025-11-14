@@ -55,8 +55,3 @@
     cursor: pointer;
     content: url(../assets/icons/007-like-button-1.png);
 }
-
-.bookContainer:hover{
-    transition: 0.3s ease-in-out;
-    transform: scale(1.01);
-}
