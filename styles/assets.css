@@ -1,3 +1,4 @@
+/* images and button designs */
 .headerLogo{
     width: 280px;
     height: 120px;
@@ -16,14 +17,27 @@
     padding: 8px 0 0 8px;
 }
 
+.inputfields{
+    display: flex;
+}
+
+.nameInput{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px var(--orange-shadow);
+    border-radius: 10px 0 0 10px;
+}
+
 .commentInput{
-    width: 280px;
+    width: 180px;
     height: 30px;
     margin-right: 8px;
     padding: 5px;
     border: none;
     border-bottom: 1px var(--orange-shadow);
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
 
 .sharebutton{
@@ -31,10 +45,18 @@
     width: 32px;
 }
 
+/* hover effects */
 .likebutton:hover{
     cursor: pointer;
+    content: url(../assets/icons/002-lieblings-1.png);
 }
 
 .sharebutton:hover{
     cursor: pointer;
+    content: url(../assets/icons/007-like-button-1.png);
+}
+
+.bookContainer:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.01);
 }
