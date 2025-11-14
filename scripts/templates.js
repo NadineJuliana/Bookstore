@@ -7,7 +7,7 @@ function getBookTemplate(indexBooklist) {
             <p class="priceInfo">${books[indexBooklist].price} €</p>
             <section class="likeSection">
                 <p id="counterLikes${indexBooklist}">${books[indexBooklist].likes}</p>
-                <img onclick="changeHighlight(indexBooklist)" id="bookHighlight${indexBooklist}" class="likebutton" src="assets/icons/001-lieblings.png" alt="Likebutton">
+                <img onclick="changeHighlight(${indexBooklist})" id="bookHighlight${indexBooklist}" class="likebutton" src="assets/icons/001-lieblings.png" alt="Likebutton">
             </section>
             </section>
             <section class="bookInformations">
@@ -21,8 +21,8 @@ function getBookTemplate(indexBooklist) {
             </table>
             </section>
             <section class="inputSection">
-            <input class="commentInput" type="text">
-                <img onclick="" class="sharebutton" src="assets/icons/006-like-button.png" alt="Send Comment">
+            <input id="newComment${indexBooklist}" class="commentInput" type="text" min-length="2" placeholder="-Hier kommentieren-" required>
+                <img onclick="addComment(${indexBooklist})" class="sharebutton" src="assets/icons/006-like-button.png" alt="Send Comment">
             </section>
         </div> `
 }
@@ -31,5 +31,12 @@ function getCommentsTemplate(commentsName, commentsComment) {
     return `
     <th>[${commentsName}]</th>
     <td>${commentsComment}</td>         
+  `
+}
+
+function getAddCommentsTemplate(newComment) {
+  return `
+    <th>[XYZ]</th>
+    <td>${newComment}</td>
   `
 }
