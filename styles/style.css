@@ -2,8 +2,14 @@
 
 /* color variables */
 :root {
-    --light-turquoise: rgb(12, 176, 152);
-    --dark-turquoise: rgb(8, 124, 106);
+    --pink: #ECD1DF;
+    --pink-transparent: #ce869ca1;
+    --purple: #B483B5;
+    --purple-transparent: #9c7eb898;
+    --yellow: #F7EFDF;
+    --yellow-transparent: #f7efdfa5;
+    --yellow-dropshadow: #FBE1A3;
+    --orange-shadow: #FEC356;
 }
 
 
@@ -12,13 +18,23 @@ header,
 footer {
     height: 120px;
     width: 100%;
-    background: var(--light-turquoise);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+header{
+   background: linear-gradient(to top, var(--purple-transparent), var(--purple)); 
+}
+
+footer{
+    background: linear-gradient(to top, var(--purple), var(--purple-transparent)); 
 }
 
 main {
     min-height: calc(100vh - 240px);
     width: 100%;
-    background: var(--dark-turquoise);
+    background: linear-gradient(to top, var(--pink), var(--pink-transparent));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +43,13 @@ main {
 /* headlines */
 h2 {
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    text-shadow: 1px 1px 5px var(--orange-shadow);
 }
 
 h3 {
-    margin: 8px;
+    padding: 8px;
+    box-shadow: 2px 2px 5px var(--orange-shadow);
 }
 
 /* Container */
@@ -45,8 +63,9 @@ h3 {
 .bookContainer {
     height: 700px;
     width: 350px;
-    background: var(--light-turquoise);
-    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px var(--yellow-dropshadow);
+    background: linear-gradient( to top, var(--yellow), var(--yellow-transparent)); 
+    border-radius: 15px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -56,8 +75,9 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8px;
+    padding: 8px;
     font-weight: bold;
+    box-shadow: 2px 2px 5px var(--orange-shadow);
 }
 
 .likeSection {
@@ -66,16 +86,19 @@ h3 {
 }
 
 .bookInformations {
-    margin: 8px;
+    padding: 8px;
     text-align: center;
+    box-shadow:  2px 2px 5px var(--orange-shadow);
 }
 
 .commentDepartment {
-    margin: 8px;
+    padding: 8px;
     overflow-y: scroll;
+    scrollbar-width: thin;
     display: flex;
     height: 200px;
     text-align: left;
+    box-shadow:  2px 2px 5px var(--orange-shadow);
 }
 
 table{
@@ -96,5 +119,8 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    padding: 8px;
+    box-shadow:  2px 2px 5px var(--orange-shadow);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
